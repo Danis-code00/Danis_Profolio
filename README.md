@@ -1,16 +1,49 @@
-# React + Vite
+# Danis Rai — macOS Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive, macOS-inspired developer portfolio built with React and GSAP. Features draggable windows, dock animations, and variable font effects — all running in the browser.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React.js** + **Vite**
+- **GSAP** + **@gsap/react** — animations, Draggable windows, variable font hover effects
+- **Tailwind CSS v4** — styling
+- **Zustand** + **Immer** — window state management
+- **Lucide React** — icons
+- **react-tooltip** — dock tooltips
+- **react-pdf** — resume viewer
+- **dayjs** — navbar clock
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- macOS-style desktop with draggable, stackable windows
+- Dock with hover scale animation
+- Variable font weight animation on landing text
+- Finder window with project files and About me section
+- Terminal window showing tech stack
+- Safari window with articles and certifications
+- Contact window with social links
+- Resume window with PDF viewer and download
+- Photos gallery window
+- macOS-style footer
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+## Project Structure
+
+```
+src/
+├── components/     # Navbar, Dock, Welcome, Footer, WindowControls
+├── windows/        # All window components (Finder, Terminal, Safari, etc.)
+├── hoc/            # WindowWrapper HOC
+├── store/          # Zustand stores (window, location)
+└── constants/      # App data (nav, dock, projects, socials, tech stack)
+```
+
+## Live
+
+> [danis-portfolio.vercel.app](https://danis-portfolio.vercel.app) *(update with your deployed URL)*
