@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Dani_/Downloads/My_MacOS_Portfolio-main/**)",
+      "Read(//c/Users/Dani_/Downloads/**)",
+      "Bash(npm install:*)",
+      "Bash(node -e \"require\\('zustand'\\)\")",
+      "Bash(node -e \"require\\('immer'\\)\")"
+    ]
+  }
+}
