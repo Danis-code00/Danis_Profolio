@@ -74,28 +74,24 @@ const navLinks = [
     },
   ];
   
-  const blogPosts = [
+  const articles = [
     {
       id: 1,
-      date: "Sep 2, 2025",
-      title:
-        "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
+      date: "2024",
+      title: "From Reactive to Proactive: How AI is Transforming Healthcare",
       image: "/images/blog1.png",
-      link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+      link: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7439892492994588672/",
     },
+  ];
+
+  const certificates = [
     {
-      id: 2,
-      date: "Aug 28, 2025",
-      title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-      image: "/images/blog2.png",
-      link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
-    },
-    {
-      id: 3,
-      date: "Aug 15, 2025",
-      title: "The Ultimate Guide to Mastering GSAP Animations",
-      image: "/images/blog3.png",
-      link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+      id: 1,
+      name: "Data Science with Python Training",
+      issuer: "Sparkup IT Academy",
+      date: "Sep – Dec 2025",
+      image: "/images/certificate.jpg",
+      link: "",
     },
   ];
   
@@ -106,7 +102,7 @@ const navLinks = [
     },
     {
       category: "Mobile",
-      items: ["React Native", "MAUI", "Expo"],
+      items: ["React Native"],
     },
     {
       category: "Styling",
@@ -114,39 +110,32 @@ const navLinks = [
     },
     {
       category: "Backend",
-      items: ["C#", "ASP.Net", "JavaScript", "Express", "NestJS"],
+      items: ["JavaScript", "Express", "NestJS"],
     },
     {
       category: "Database",
-      items: ["MongoDB", "PostgreSQL", "SQL Server", "MySQL"],
+      items: ["MongoDB", "SQL Server", "MySQL"],
     },
     {
       category: "Dev Tools",
-      items: ["Git", "GitHub", "Docker"],
+      items: ["Git", "GitHub"],
     },
   ];
   
   const socials = [
     {
       id: 1,
-      text: "Telegram",
-      icon: "/icons/telegram.svg",
-      bg: "#05b6f6",
-      link: "https://t.me/Alireza86510",
-    },
-    {
-      id: 2,
       text: "Github",
       icon: "/icons/github.svg",
       bg: "#010101",
-      link: "https://github.com/Alireza86510",
+      link: "https://github.com/Danis-code00",
     },
     {
-      id: 3,
+      id: 2,
       text: "LinkedIn",
       icon: "/icons/linkedin.svg",
       bg: "#0566ff",
-      link: "hhttps://search.eitaa.com/?url=https://www.linkedin.com/in/alireza-khosravi-6b7191331?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app",
+      link: "https://linkedin.com/in/",
     },
   ];
   
@@ -190,7 +179,8 @@ const navLinks = [
   ];
   
   export {
-    blogPosts,
+    articles,
+    certificates,
     dockApps,
     gallery,
     navIcons,
@@ -210,23 +200,23 @@ const navLinks = [
       // ▶ Project 1
       {
         id: 5,
-        name: "CMS Project",
+        name: "Restaurant Project",
         icon: "/images/folder.png",
         kind: "folder",
-        position: "top-10 left-5", // icon position inside Finder
-        windowPosition: "top-[5vh] left-5", // optional: Finder window position
+        position: "top-10 left-5",
+        windowPosition: "top-[5vh] left-5",
         children: [
           {
             id: 1,
-            name: "CMS Project.txt",
+            name: "Restaurant Project.txt",
             icon: "/images/txt.png",
             kind: "file",
             fileType: "txt",
             position: "top-5 left-10",
             description: [
-              "The CMS Project is a modern platform designed for managing content the best way.",
-              "Instead of a simple online blog, it delivers an immersive experience with bold user profile page, interactive posts section, and a comment section for each post.",
-              "It's built with ASP.Net Core and Bootstrap, ensuring fast performance, responsive design, and a clean, premium look.",
+              "A full-stack restaurant web application built with Node.js and Express.",
+              "Features include menu management, order processing, and a clean user interface for customers to browse and place orders.",
+              "Built with Node.js, Express, and modern web technologies for a fast and reliable experience.",
             ],
           },
           {
@@ -235,49 +225,31 @@ const navLinks = [
             icon: "/images/safari.png",
             kind: "file",
             fileType: "url",
-            href: "https://github.com/Alireza86510/CMS-Project.git",
+            href: "https://github.com/Danis-code00/Nodejs-Resturant-Project",
             position: "top-10 right-20",
           },
-          // {
-          //   id: 4,
-          //   name: "nike.png",
-          //   icon: "/images/image.png",
-          //   kind: "file",
-          //   fileType: "img",
-          //   position: "top-52 right-80",
-          //   imageUrl: "/images/project-1.png",
-          // },
-          // {
-          //   id: 5,
-          //   name: "Design.fig",
-          //   icon: "/images/plain.png",
-          //   kind: "file",
-          //   fileType: "fig",
-          //   href: "https://google.com",
-          //   position: "top-60 right-20",
-          // },
         ],
       },
       // ▶ Project 2
       {
         id: 6,
-        name: "MacOS Project",
+        name: "Dog vs Cat Classifier",
         icon: "/images/folder.png",
         kind: "folder",
-        position: "top-45 left-5", // icon position inside Finder
-        windowPosition: "top-[20vh] left-5", // optional: Finder window position
+        position: "top-45 left-5",
+        windowPosition: "top-[20vh] left-5",
         children: [
           {
             id: 1,
-            name: "Portfolio Project.txt",
+            name: "Dog vs Cat Classifier.txt",
             icon: "/images/txt.png",
             kind: "file",
             fileType: "txt",
             position: "top-5 left-10",
             description: [
-              "The Portfolio Project is a modern portfolio designed to showcase my abilities in the practical way.",
-              "Instead of a simple whoami page, it delivers an amazing experience with bold UI components, interactive desktop section, and many more cute features",
-              "It's built with React.js, Tailwind and GSAP, ensuring lightning performance, modern design, and a tidy, premium look.",
+              "A machine learning project that classifies images of dogs and cats using a trained CV model.",
+              "Built with Python and a convolutional neural network to accurately distinguish between the two animals.",
+              "Demonstrates core ML concepts including image preprocessing, model training, and prediction.",
             ],
           },
           {
@@ -286,27 +258,9 @@ const navLinks = [
             icon: "/images/safari.png",
             kind: "file",
             fileType: "url",
-            href: "https://github.com/Alireza86510/My_MacOS_Portfolio.git",
+            href: "https://github.com/Danis-code00/CV",
             position: "top-10 right-20",
           },
-          {
-            id: 4,
-            name: "Portfolio.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-52 right-80",
-            imageUrl: "/images/portfolio.png",
-          },
-          // {
-          //   id: 5,
-          //   name: "Design.fig",
-          //   icon: "/images/plain.png",
-          //   kind: "file",
-          //   fileType: "fig",
-          //   href: "https://google.com",
-          //   position: "top-60 right-20",
-          // },
         ],
       },
     ],
@@ -326,7 +280,7 @@ const navLinks = [
         kind: "file",
         fileType: "img",
         position: "top-10 left-5",
-        imageUrl: "/images/me.jpg",
+        imageUrl: "/images/me.png",
       },
       {
         id: 2,
@@ -336,9 +290,9 @@ const navLinks = [
         fileType: "txt",
         position: "top-50 left-5",
         subtitle: "Meet the Developer Behind the Code",
-        image: "/images/adrian.jpg",
+        image: "/images/me.png",
         description: [
-          "Hey! I’m Alireza 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
+          "Hey! I’m Danis 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
           "I specialize in JavaScript and React—and I love making things feel smooth, fast, and just a little bit delightful.",
           "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
         ],
