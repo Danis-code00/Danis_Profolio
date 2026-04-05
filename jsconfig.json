@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "#components/*": ["src/components/*"],
+            "#constants/*": ["src/constants/*"],
+            "#store/*": ["src/store/*"],
+            "#hoc/*": ["src/hoc/*"],
+            "#windows/*": ["src/windows/*"],
+            "#utils/*": ["src/utils/*"],
+        }
+    }
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"],
+    "extends": ["react-app", "react-app/jest"],
+    "rules": {
+        "no-unused-vars": "error",
+        "no-undef": "error",
+        "no-undef-init": "error",
+        "no-undef-init": "error",
+}
